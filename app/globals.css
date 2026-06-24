@@ -1,49 +1,107 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html {
-  height: 100%;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  background: #080808;
+  color: white;
+  font-family: sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.hero {
+  height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95)),
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?w=1600");
+
+  background-size: cover;
+}
+
+.hero h1 {
+  font-size: 5rem;
+
+  color: #ff0033;
+
+  text-shadow:
+    0 0 20px red,
+    0 0 40px crimson;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+.hero button {
+  margin-top: 40px;
+
+  padding: 18px 35px;
+
+  background: #ff0033;
+
+  border: none;
+
+  border-radius: 15px;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: crimson;
+}
+.footer {
+  background: #050505;
+
+  padding: 80px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+.footer::before {
+  content: "";
+
+  display: block;
+
+  width: 300px;
+
+  height: 1px;
+
+  background: linear-gradient(to right, transparent, red, transparent);
+
+  margin: auto;
+  margin-bottom: 40px;
+}
+.footer h3 {
+  color: #ff0033;
+
+  text-shadow:
+    0 0 10px red,
+    0 0 20px crimson;
+}
+
+.footer p {
+  color: #999;
+
+  font-style: italic;
+
+  font-size: 1.1rem;
+
+  letter-spacing: 2px;
 }

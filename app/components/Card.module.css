@@ -1,0 +1,36 @@
+.card{
+background:#111;
+border-radius:20px;
+overflow:hidden;
+transition:.4s;
+box-shadow:0 0 15px rgba(255,0,0,.3);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px crimson;
+}
+
+.card img{
+width:100%;
+height:450px;
+object-fit:cover;
+}
+
+.content{
+padding:20px;
+}
+
+.content h2{
+color:#ff3355;
+}
+
+.content p{
+color:#bbb;
+margin-top:10px;
+}
+
+.content h3{
+color:gold;
+margin-top:15px;
+}
